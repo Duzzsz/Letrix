@@ -1,0 +1,157 @@
+body {
+  background-image: url(PaisagemPixeladaRetrôcomMontanhaseLago.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin-top: auto;
+}
+
+h1 {
+  font-size: 120px;
+  margin-top: auto;
+  text-shadow: 10px 6px 7px black;
+}
+
+.par {
+  margin-top: -70px;
+  margin: -70px auto 20px auto ;
+  font-size: 20px;
+  background-color: rgba(49, 48, 48, 0.849);
+  border-color: #000000;
+  border-radius: 100px;
+  width: fit-content;
+  padding: 5px 90px;
+ 
+}
+
+
+
+#tabuleiro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.linha {
+  display: flex;
+  gap: 6px;
+}
+
+.celula {
+  width: 80px;
+  height: 80px;
+  border: 6px solid #000000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  background-color: rgba(129, 182, 239, 0.408);
+  color: #000000;
+}
+
+
+
+#teclado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.fileira {
+  display: flex;
+  gap: 8px;
+}
+
+.tecla {
+  width: 72px;
+  height: 76px;
+  background-color: #3f383b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tecla:hover {
+  background-color: #5c5154;
+}
+
+.tecla-apagar {
+  margin-left: 30px;
+}
+
+.tecla-enter {
+  width: 210px;
+  font-size: 22px;
+  margin-left: 30px;
+}
+
+
+
+
+#meio_corpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+#nr {
+  padding:85px 85px;
+  font-size: 20px;
+  background-color: #fffefe00;
+  color: white;
+  border:none;
+  border-radius: 100px;
+background-image: url(nova_rodada.png);
+background-position: center;
+background-size: cover;
+}
+
+#vdr {
+    padding:85px 85px;
+  font-size: 20px;
+  background-color: #fffefe00;
+  color: white;
+  border:none;
+  border-radius: 100px;
+background-image: url(Icone_Validar.png);
+background-position: center;
+background-size: cover;
+
+}
+
+#nr:hover, #vdr:hover {
+  background-color: #11005d;
+  transform: scale(1.05);
+}
+
+.celula.verde {
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+    color: white;
+}
+
+/* Letra existente na posição errada */
+.celula.amarelo {
+    background-color: #c9b458;
+    border-color: #c9b458;
+    color: white;
+}
+
+.celula.vinho {
+    background-color: #722F37;
+    border-color: #722F37;
+    color: white;
+}
